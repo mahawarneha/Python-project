@@ -1,0 +1,35 @@
+1) factorial
+def factorial(n):
+ fac=1
+ 
+ for i in range(1,n+1):
+   fac*=i
+   print(fac)
+ 
+factorial(5)
+=============================================================
+
+2) sum of the list
+def sum(num):
+ sum=0
+ for i in num:
+  sum +=i
+print("sum is",sum)
+sum([10,23,98])
+=============================================================== 
+3) find the  length
+def length(list):
+ print(len(list))
+
+subject=["english","hindi","maths","sst"]
+length(subject)
+===============================================================
+4) even and odd funtion
+def even_odd(n):    
+ if n % 2 == 0:
+  print(n,"is a even number")
+ else:
+   print(n, "is a odd number")
+even_odd(789)
+==================================================================
+
