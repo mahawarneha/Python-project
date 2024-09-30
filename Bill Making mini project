@@ -1,0 +1,47 @@
+menu={
+    "Pizza":320,
+    "Burger":200,
+    "Momos":80,
+    "Coffee":150,
+    "Ice-Tea":100
+}
+
+print("Welcome to our resturant")
+print(menu)
+print("Please! place order")
+
+total_amt=0
+order1=input("enter you order :::: =")
+if order1 in menu:
+    total_amt +=menu[order1]
+    print(total_amt)
+else:
+    print("item not in menu")
+
+any_thing_as=input("Any thing you would like to order (yes/no)?")
+if any_thing_as == "yes":
+    order2=input("enter you next order:::::")
+    if order2 in menu:
+        total_amt += menu[order2]
+        print(total_amt)
+    else:
+        print("not in menu")
+else:
+    print("Thank for order it will take 15 min to prepare")
+
+====================================================================================================================================
+                                                     OUTPUT
+====================================================================================================================================
+Welcome to our resturant
+{'Pizza': 320, 'Burger': 200, 'Momos': 80, 'Coffee': 150, 'Ice-Tea': 100}
+Please! place order
+enter you order :::: =Burger
+200
+Any thing you would like to order (yes/no)?no
+Thank for order you will take 15 min to prepare
+
+
+
+
+
+
